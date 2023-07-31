@@ -3,7 +3,7 @@
         <div>
             <section class="section-1">
                 <img src="../images/stars.png" id="stars">
-                <img src="../images/moon (1).png" id="moon">
+                <img src="../images/moon.png" id="moon">
                 <h2 id="text">PORTFOLIO<br>
                     <span>Lavoisier Romain</span>
                 </h2>
