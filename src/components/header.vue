@@ -9,7 +9,7 @@
       </button>
       <div :class="{ collapse }" class="navbar-collapse">
         <div class="navbar-nav ms-auto text-uppercase ">
-          <router-link to="/"><span class="nav-link">Accueil</span></router-link>
+          <router-link to="/index"><span class="nav-link">Accueil</span></router-link>
           <router-link to="/explorateur"><span class="nav-link">Explorateur</span></router-link>
           <router-link to="/competences"><span class="nav-link">Aptitudes</span></router-link>
           <router-link to="/projets"><span class="nav-link">Missions Accomplies</span></router-link>
