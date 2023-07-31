@@ -17,7 +17,7 @@ import Competences from './pages/competences.vue'
 
 
 const routes = [
-    { path: '/', component: Index },
+    { path: '/index', component: Index },
     { path: '/explorateur', component: Explorateur },
     { path: '/projets', component: Projets },
     { path: '/contact', component: Contact },
