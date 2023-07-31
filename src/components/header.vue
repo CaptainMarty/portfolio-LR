@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg header-overlay" >
     <div class="container-fluid nav-font">
       <a class="navbar-brand" href="/">
-        <img src="https://captainmarty.github.io/portfolio-lr/assets/Logo_LRcm-095b0ece.png" alt="CubeRunner" height="150" width="150">
+        <img src="../images/Logo_LRcm.png" alt="CubeRunner" height="150" width="150">
       </a>
       <button @click="collapse = !collapse" class="navbar-toggler" type="button">
         <span class="navbar-toggler-icon"></span>

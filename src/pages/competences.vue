@@ -4,40 +4,97 @@
             <img src="../images/stars.png" id="stars">
             <img src="../images/moon.png" id="moon">
             <h2 id="text">APTITUDES<br>
-                <span>Constellations de Compétences</span>
+                <span>Système Solaire de Compétences</span>
             </h2>
+            <button @click="scrollToSection" id="btn">Explorer</button>
             <img src="../images/mountain_front_left.png" id="mountain_front">
             <img src="../images/moon_landing.png" id="moon_landing">
         </section>
 
-        <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8 col-sm-12 sec" id="section">
-                        <h2>BONJOUR !</h2>
-                        <p>Embarquez pour un voyage intersidéral au cœur de mon univers d'exploration créative en tant que
-                            Community Manager et créateur de contenus dédié au monde graphique. Laissez-moi vous présenter
-                            un panorama étourdissant des réalisations que j'ai forgées pour propulser le développement et
-                            l'attractivité de votre image. Telle une étoile filante, je m'engage à concevoir des contenus
-                            envoûtants et percutants, capables de capturer l'essence même de votre marque et de susciter
-                            l'engouement de votre communauté cosmique.
-                        </p>
+        <div class="container sec2">
+            <div class="row">
+                <h2 class="titre-competence" id="section">Les planètes compétences</h2>
+                <p>Fort d'une expérience autodidacte de plus de 10 ans, j'ai acquis un vaste éventail de compétences en tant
+                    que community manager et streamer. Ces compétences forment un système solaire, chacune représentant un
+                    niveau d'expertise exprimé en pourcentage.<br>
+                    Que ce soit la création de stratégies captivantes, la gestion
+                    des médias sociaux ou encore la création de communautés florissantes, je suis prêt à explorer les
+                    confins de l'univers numérique pour offrir une présence en ligne exceptionnelle à mes clients. Guidé par
+                    ma passion et ma détermination, je suis prêt à guider ma communauté vers de nouveaux horizons
+                    numériques.
+                </p>
+                <div class="bloc-planet d-flex">
+                    <div class="zoom-img text-center col-2">
+                        <div class="image-container">
+                            <img src="../images/planet-1.png" alt="" height="200" width="200">
+                            <p>Adobe</p>
+                            <div class="overlay-text">
+                                <p>Habitable à 85%</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-sm-12 sec">
-                        <img src="../images/V2.png" alt="" height="300" width="300">
+                    <div class="zoom-img text-center col-2">
+                        <div class="image-container">
+                            <img src="../images/planet-2.png" alt="" height="200" width="200">
+                            <p>Réseaux sociaux</p>
+                            <div class="overlay-text">
+                                <p>Habitable à 70%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zoom-img text-center col-2">
+                        <div class="image-container">
+                            <img src="../images/planet-3.png" alt="" height="200" width="200">
+                            <p>Communication</p>
+                            <div class="overlay-text">
+                                <p>Habitable à 75%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zoom-img text-center col-2">
+                        <div class="image-container">
+                            <img src="../images/planet-4.png" alt="" height="200" width="200">
+                            <p>Montage Vidéo</p>
+                            <div class="overlay-text">
+                                <p>Habitable à 100%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zoom-img text-center col-2">
+                        <div class="image-container">
+                            <img src="../images/planet-5.png" alt="" height="200" width="200">
+                            <p>Graphisme</p>
+                            <div class="overlay-text">
+                                <p>Habitable à 90%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zoom-img text-center col-2">
+                        <div class="image-container">
+                            <img src="../images/planet-6.png" alt="" height="200" width="200">
+                            <p>Anglais</p>
+                            <div class="overlay-text">
+                                <p>Habitable à 60%</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
-
+        </div>
     </body>
 </template>
-
+  
 <script>
-
+export default {
+    methods: {
+        scrollToSection() {
+            const section = document.getElementById('section');
+            section.scrollIntoView({ behavior: 'smooth' });
+        },
+    }
+}
 </script>
-
+  
 <style scoped>
 body {
     min-height: 100vh;
@@ -62,7 +119,7 @@ section {
     bottom: 0;
     width: 100%;
     height: 40px;
-    background: linear-gradient(to top, #7597de, transparent);
+    background: linear-gradient(to top, #4F5399, transparent);
     z-index: 1000;
 }
 
@@ -99,6 +156,7 @@ h2 span {
     justify-content: center;
     align-items: center;
 }
+
 .sec {
     position: relative;
     padding: 100px;
@@ -120,4 +178,64 @@ h2 span {
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-</style>
+
+.sec2 p {
+    font-size: 1.5em;
+    color: white;
+}
+
+#btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: white;
+    color: #2b1055 !important;
+    font-size: 1.5em;
+    display: inline-block;
+    z-index: 9;
+    transform: translateY(100px);
+    border: none;
+}
+
+.titre-competence {
+    font-size: 4.5em;
+    margin-bottom: 10px;
+    color: white;
+    padding-top: 50px;
+}
+
+.bloc-planet {
+    margin: 50px 0 200px 0;
+    padding: 50px;
+}
+
+.zoom-img img,
+.sec3 img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Ajouter l'effet de zoom sur hover */
+.zoom-img img:hover,
+.sec3 img:hover {
+    transform: scale(1.2);
+    filter: blur(3px);
+}
+.overlay-text {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    background-color: rgb(90, 102, 173, 0.5);
+    /* Masquer le texte par défaut */
+}
+
+.image-container:hover .overlay-text {
+    display: block;
+}</style>
+  

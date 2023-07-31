@@ -6,13 +6,14 @@
             <h2 id="text">EXPLORATEUR<br>
                 <span>Qui suis-je ?</span>
             </h2>
+            <button @click="scrollToSection" id="btn">Explorer</button>
             <img src="../images/mountain_front_left.png" id="mountain_front">
             <img src="../images/moon_landing.png" id="moon_landing">
         </section>
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-8 col-sm-12 sec1">
+                <div class="col-lg-8 col-sm-12 sec1" id="section">
                     <h2>Community Manager <br>Créateur de Contenus</h2>
                     <p>Plongez dans l'aventure captivante d'un autodidacte passionn&eacute; de community management et de
                         cr&eacute;ation de contenus. J'ai acquis une pr&eacute;cieuse exp&eacute;rience lors
@@ -63,6 +64,12 @@
         <div class="container-fluid sec2">
             <div class="row">
                 <h2>M'ont fait confiance</h2>
+                <p>Au cœur de l'espace virtuel, j'ai été modérateur sur les chaînes de Djboucherie et Dealoc pendant
+                    respectivement un et deux ans. <br>
+                    En tant que stagiaire community manager chez VosgesFM et Supercube, j'ai
+                    su gagner la confiance de ces planètes médiatiques
+                    grâce à mes convictions et mon travail remarquable.
+                </p>
                 <div class="text-center col-2"></div>
                 <div class="zoom-img text-center col-2">
                     <a href="https://www.twitch.tv/djboucherie" target="_blank">
@@ -106,7 +113,14 @@
 </template>
 
 <script>
-
+export default {
+    methods: {
+        scrollToSection() {
+            const section = document.getElementById('section');
+            section.scrollIntoView({ behavior: 'smooth' });
+        },
+    }
+}
 </script>
 
 <style scoped>
@@ -164,11 +178,17 @@ section img#mountain_front {
     top: 300px;
 }
 
-h2 span {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: white;
+    color: #2b1055 !important;
+    font-size: 1.5em;
+    display: inline-block;
+    z-index: 9;
+    transform: translateY(100px);
+    border: none;
 }
 
 .sec1 {
@@ -177,10 +197,17 @@ h2 span {
     background: #1c0522;
 }
 
-.sec1 h2 {
+.sec1 h2,
+.sec2 h2 {
     font-size: 4.5em;
     margin-bottom: 10px;
     color: white;
+}
+h2 span {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sec1 p {
@@ -207,24 +234,20 @@ h2 span {
     background: #7597de;
 }
 
-.sec2 h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: white;
-}
-
 .sec2 p {
     font-size: 1.5em;
     color: white;
 }
 
 /* Style pour les images zoomées */
-.zoom-img img, .sec3 img {
+.zoom-img img,
+.sec3 img {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 /* Ajouter l'effet de zoom sur hover */
-.zoom-img img:hover, .sec3 img:hover {
+.zoom-img img:hover,
+.sec3 img:hover {
     transform: scale(1.2);
     filter: blur(5px);
 }
@@ -246,5 +269,4 @@ h2 span {
 /* Afficher le texte sur hover */
 .image-container:hover .overlay-text {
     display: block;
-}
-</style>
+}</style>
