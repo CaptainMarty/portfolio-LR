@@ -7,33 +7,7 @@
                 </div>
                 <div class="row">
                     <div class="form-container col-4">
-                        <form @submit.prevent="checkForm" action="https://vuejs.org/" method="post">
-                            <label for="name">Votre Pseudo</label>
-                            <input id="name" type="text" v-model="name" name="name" placeholder="Exemple : Exempledu78">
-                            <p class="errors" v-if="nameError">{{ nameError }}</p>
-
-                            <label for="email">Email</label>
-                            <input id="email" type="email" v-model="email" name="email" placeholder="Exemple : exempledu78@blabla.com">
-                            <p class="errors" v-if="emailError">{{ emailError }}</p>
-
-                            <label for="object">Objet du message</label>
-                            <select v-model="object" class="form-select" id="object">
-                                <option value="" disabled>Votre choix ...</option>
-                                <option value="1">Commentaires</option>
-                                <option value="2">Questions</option>
-                                <option value="3">Problèmes</option>
-                            </select>
-                            <p class="errors" v-if="objectError">{{ objectError }}</p>
-
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" v-model="message" cols="30" rows="5"
-                                placeholder="Exemple : Bonjour, voici le message...">
-                                    </textarea>
-                            <p class="errors" v-if="messageError">{{ messageError }}</p>
-
-                            <input id="validEmail" type="submit" value="Envoyer">
-                            <p class="success-message" v-if="success">Message envoyé avec succès, Merci de votre contribution ! </p>
-                        </form>
+                        (en cours)
                     </div>
                 </div>
             </div>
