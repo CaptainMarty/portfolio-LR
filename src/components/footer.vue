@@ -4,13 +4,16 @@
             <div class="row">
                 <div class="name col-4">
                     <h3>Lavoisier Romain</h3>
-                    <p>Community Manager & créateur de contenus <br>
-                        rom.lavoisier@gmail.com</p>
+                    <p>Community Manager & créateur de contenus</p>
                 </div>
                 <div class="col-8 d-flex justify-content-center align-items-center">
                     <a class="box-icon" href="/"><i><font-awesome-icon icon="fab fa-facebook-f" /></i></a>
                     <a class="box-icon" href="/"><i><font-awesome-icon icon="fab fa-instagram" /></i></a>
                     <a class="box-icon" href="/"><i><font-awesome-icon icon="fab fa-youtube" /></i></a>
+                    <a class="box-icon" href="/"><i><font-awesome-icon icon="fab fa-twitch" /></i></a>
+                    <a class="box-icon" href="/"><i><font-awesome-icon icon="fab fa-tiktok" /></i></a>
+
+
                 </div>
             </div>
         </div>

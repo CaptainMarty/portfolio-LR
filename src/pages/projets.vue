@@ -12,30 +12,29 @@
         </section>
 
         <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 sec" id="section">
-                        <h2>Mes Différentes Projets</h2>
+            <div class="row">
+                <div class="col-12 sec" id="section">
+                    <h2>Mes Différentes Projets</h2>
+                    <div class="bloc-projets d-flex">
+                        <div class="text-center col-4">
+                            <div class="image-container">
+                                <img src="../images/projet-1.png" class="image-background" alt="" height="350" width="350">
+                            </div>
+                        </div>
+                        <div class="text-center col-4">
+                            <div class="image-container">
+                                <img src="../images/projet-2.png" class="image-background" alt="" height="350" width="350">
+                            </div>
+                        </div>
+                        <div class="text-center col-4">
+                            <div class="image-container">
+                                <img src="../images/projet-3.png" class="image-background" alt="" height="350" width="350">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row sec text-center">
-                    <div class="col-4">
-                        <img src="../images/fond-card.png" alt="" height="500">
-                        <img src="../images/projet-1.png" alt="" height="500">
-
-                    </div>
-                    <div class="col-4">2</div>
-                    <div class="col-4">3</div>
-                </div>
-                <div class="row sec text-center">
-                    <div class="col-4">1</div>
-                    <div class="col-4">2</div>
-                    <div class="col-4">3</div>
                 </div>
             </div>
-
-
-
-
+        </div>
     </body>
 </template>
 
@@ -95,6 +94,7 @@ section img#moon {
 section img#mountain_front {
     z-index: 10;
 }
+
 #btn {
     text-decoration: none;
     padding: 8px 30px;
@@ -124,6 +124,7 @@ h2 span {
     justify-content: center;
     align-items: center;
 }
+
 .sec {
     position: relative;
     padding: 100px;
@@ -135,14 +136,8 @@ h2 span {
     margin-bottom: 10px;
     color: white;
 }
-
-.sec p {
-    font-size: 1.5em;
-    color: white;
-}
-
-.sec img {
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.bloc-projets img {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 </style>

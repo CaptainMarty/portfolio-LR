@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFacebookF, faInstagram, faYoutube, faApple, faAndroid } from '@fortawesome/free-brands-svg-icons'
 library.add(faFacebookF, faInstagram, faYoutube, faApple, faAndroid)
 
-
 import App from './App.vue'
 import Index from './pages/index.vue'
 import Explorateur from './pages/explorateur.vue'

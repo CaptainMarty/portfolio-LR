@@ -221,7 +221,6 @@ h2 span {
     filter: blur(3px);
 }
 .overlay-text {
-
     position: absolute;
     top: 50%;
     left: 50%;
