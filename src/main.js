@@ -15,8 +15,8 @@ import Contact from './pages/contact.vue'
 import Competences from './pages/competences.vue'
 
 
-
 const routes = [
+    { path: '/', redirect: '/index' },
     { path: '/index', component: Index },
     { path: '/explorateur', component: Explorateur },
     { path: '/projets', component: Projets },

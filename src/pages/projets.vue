@@ -3,29 +3,31 @@
         <section class="section-1">
             <img src="../images/stars.png" id="stars">
             <img src="../images/moon.png" id="moon">
-            <h2 id="text">MISSIONS <br>
-                ACCOMPLIES<br>
-                <span>Galaxies de Réalisations</span>
+            <h2 id="text">MISSIONS
+                <span>Accomplies</span>
             </h2>
+            <button @click="scrollToSection" id="btn">Explorer</button>
             <img src="../images/mountain_front_left.png" id="mountain_front">
             <img src="../images/moon_landing.png" id="moon_landing">
         </section>
 
         <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-8 col-sm-12 sec" id="section">
-                        <h2>BONJOUR !</h2>
-                        <p>Embarquez pour un voyage intersidéral au cœur de mon univers d'exploration créative en tant que
-                            Community Manager et créateur de contenus dédié au monde graphique. Laissez-moi vous présenter
-                            un panorama étourdissant des réalisations que j'ai forgées pour propulser le développement et
-                            l'attractivité de votre image. Telle une étoile filante, je m'engage à concevoir des contenus
-                            envoûtants et percutants, capables de capturer l'essence même de votre marque et de susciter
-                            l'engouement de votre communauté cosmique.
-                        </p>
+                    <div class="col-12 sec" id="section">
+                        <h2>Mes Différentes Projets</h2>
                     </div>
-                    <div class="col-lg-4 col-sm-12 sec">
-                        <img src="../images/V2.png" alt="" height="300" width="300">
+                </div>
+                <div class="row sec text-center">
+                    <div class="col-4">
+                        <img src="../images/fond-card.png" alt="" height="500">
                     </div>
+                    <div class="col-4">2</div>
+                    <div class="col-4">3</div>
+                </div>
+                <div class="row sec text-center">
+                    <div class="col-4">1</div>
+                    <div class="col-4">2</div>
+                    <div class="col-4">3</div>
                 </div>
             </div>
 
@@ -36,7 +38,14 @@
 </template>
 
 <script>
-
+export default {
+    methods: {
+        scrollToSection() {
+            const section = document.getElementById('section');
+            section.scrollIntoView({ behavior: 'smooth' });
+        },
+    }
+}
 </script>
 
 <style scoped>
@@ -83,6 +92,18 @@ section img#moon {
 
 section img#mountain_front {
     z-index: 10;
+}
+#btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: white;
+    color: #2b1055 !important;
+    font-size: 1.5em;
+    display: inline-block;
+    z-index: 9;
+    transform: translateY(100px);
+    border: none;
 }
 
 #text {

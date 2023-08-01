@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg header-overlay" >
     <div class="container-fluid nav-font">
-      <a class="navbar-brand" href="/">
-        <img src="../images/Logo_LRcm.png" alt="CubeRunner" height="150" width="150">
-      </a>
+        <router-link to="/index" class="navbar-brand">
+          <img src="../images/Logo_LRcm.png" alt="CubeRunner" height="150" width="150">
+        </router-link>
       <button @click="collapse = !collapse" class="navbar-toggler" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
