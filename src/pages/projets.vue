@@ -20,6 +20,8 @@
                 <div class="row sec text-center">
                     <div class="col-4">
                         <img src="../images/fond-card.png" alt="" height="500">
+                        <img src="../images/projet-1.png" alt="" height="500">
+
                     </div>
                     <div class="col-4">2</div>
                     <div class="col-4">3</div>

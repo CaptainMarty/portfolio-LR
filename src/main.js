@@ -21,8 +21,7 @@ const routes = [
     { path: '/explorateur', component: Explorateur },
     { path: '/projets', component: Projets },
     { path: '/contact', component: Contact },
-    { path: '/competences', component: Competences },
-
+    { path: '/competences', component: Competences }
   ]
 
 
