@@ -23,7 +23,7 @@
                             <router-link to="./projetone.vue">
                                 <div class="image-container">
                                     <img src="../images/projet-1.png" class="image-background" alt="" height="350" width="350">
-                                    <div class="overlay-text">En savoir plus...</div>
+                                    <div class="overlay-text">En savoir plus..</div>
                                 </div>
                             </router-link>
                         </div>
@@ -31,7 +31,7 @@
                             <router-link to="./projettwo.vue">
                                 <div class="image-container">
                                     <img src="../images/projet-2.png" class="image-background" alt="" height="350" width="350">
-                                    <div class="overlay-text">En savoir plus...</div>
+                                    <div class="overlay-text">En savoir plus..</div>
                                 </div>
                             </router-link>
                         </div>
@@ -39,7 +39,7 @@
                             <router-link to="./projettree.vue">
                                 <div class="image-container">
                                     <img src="../images/projet-3.png" class="image-background" alt="" height="350" width="350">
-                                    <div class="overlay-text">En savoir plus...</div>
+                                    <div class="overlay-text">En savoir plus..</div>
                                 </div>
                             </router-link>
                         </div>
