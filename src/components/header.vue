@@ -4,9 +4,10 @@
       <router-link to="/index" class="navbar-brand">
         <img src="../images/Logo_LRcm.png" alt="LRcm Logo" height="150" width="150">
       </router-link>
-      <button @click="collapse = !collapse" class="navbar-toggler" type="button">
+      <button @click="collapse = !collapse" class="navbar-toggler collapsed" type="button">
         <span class="toggler-icon top-bar"></span>
-        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
       </button>
       <div :class="{ collapse }" class="navbar-collapse">
         <div class="navbar-nav ms-auto text-uppercase ">
@@ -72,6 +73,50 @@ a:hover span {
   background: white;
   color: #2b1055;
   border-radius: 20px;
+}
+.navbar-toggler{
+  border: 0;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.toggler-icon{
+  width: 30px;
+  height: 3px;
+  background-color: red;
+  display: block;
+  transition: all 0.2s ;
+}
+.middle-bar{
+  margin: 5px auto;
+}
+.navbar-toggler .top-bar{
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar{
+  opacity: 0;
+  filter: alpha(opacity=0);
+}.navbar-toggler .bottom-bar{
+  transform: rotate(-45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler.collapsed .top-bar{
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar{
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .toggler-icon{
+  background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .navbar-nav {
