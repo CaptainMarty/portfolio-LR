@@ -3,8 +3,8 @@
         <section class="section-1">
             <img src="../images/stars.png" id="stars">
             <img src="../images/moon.png" id="moon">
-            <h2 id="text">APTITUDES<br>
-                <span>Système Solaire de Compétences</span>
+            <h2 class="text-center" id="text">APTITUDES<br>
+                <span>Système Solaire<br>de Compétences</span>
             </h2>
             <button @click="scrollToSection" id="btn">Explorer</button>
             <img src="../images/mountain_front_left.png" id="mountain_front">
@@ -13,8 +13,9 @@
 
         <div class="container sec2">
             <div class="row">
-                <h2 class="titre-competence" id="section">Les planètes compétences</h2>
-                <p>Fort d'une expérience autodidacte de plus de 10 ans, j'ai acquis un vaste éventail de compétences en tant
+                <h2 class="titre-competence text-center" id="section">Les planètes compétences</h2>
+                <p class="text-center">Fort d'une expérience autodidacte de plus de 10 ans, j'ai acquis un vaste éventail de
+                    compétences en tant
                     que community manager et streamer. Ces compétences forment un système solaire, chacune représentant un
                     niveau d'expertise exprimé en pourcentage.<br>
                     Que ce soit la création de stratégies captivantes, la gestion
@@ -23,59 +24,59 @@
                     ma passion et ma détermination, je suis prêt à guider ma communauté vers de nouveaux horizons
                     numériques.
                 </p>
-                <div class="bloc-planet d-flex">
-                    <div class="zoom-img text-center col-2">
-                        <div class="image-container">
-                            <img src="../images/planet-1.png" alt="" height="200" width="200">
-                            <p>Adobe</p>
-                            <div class="overlay-text">
-                                <p>Habitable à 85%</p>
-                            </div>
+            </div>
+            <div class="row bloc-planet d-flex">
+                <div class="zoom-img text-center col-lg-2 col-12">
+                    <div class="image-container">
+                        <img src="../images/planet-1.png" alt="" height="200" width="200">
+                        <p>Adobe</p>
+                        <div class="overlay-text">
+                            <p>Habitable à <span class="pourcent">85%</span></p>
                         </div>
                     </div>
-                    <div class="zoom-img text-center col-2">
-                        <div class="image-container">
-                            <img src="../images/planet-2.png" alt="" height="200" width="200">
-                            <p>Réseaux sociaux</p>
-                            <div class="overlay-text">
-                                <p>Habitable à 70%</p>
-                            </div>
+                </div>
+                <div class="zoom-img text-center col-lg-2 col-12">
+                    <div class="image-container">
+                        <img src="../images/planet-2.png" alt="" height="200" width="200">
+                        <p>Réseaux sociaux</p>
+                        <div class="overlay-text">
+                            <p>Habitable à <span class="pourcent">70%</span></p>
                         </div>
                     </div>
-                    <div class="zoom-img text-center col-2">
-                        <div class="image-container">
-                            <img src="../images/planet-3.png" alt="" height="200" width="200">
-                            <p>Communication</p>
-                            <div class="overlay-text">
-                                <p>Habitable à 75%</p>
-                            </div>
+                </div>
+                <div class="zoom-img text-center col-lg-2 col-md-12">
+                    <div class="image-container">
+                        <img src="../images/planet-3.png" alt="" height="200" width="200">
+                        <p>Communication</p>
+                        <div class="overlay-text">
+                            <p>Habitable à <span class="pourcent">75%</span></p>
                         </div>
                     </div>
-                    <div class="zoom-img text-center col-2">
-                        <div class="image-container">
-                            <img src="../images/planet-4.png" alt="" height="200" width="200">
-                            <p>Montage Vidéo</p>
-                            <div class="overlay-text">
-                                <p>Habitable à 100%</p>
-                            </div>
+                </div>
+                <div class="zoom-img text-center col-lg-2 col-md-12">
+                    <div class="image-container">
+                        <img src="../images/planet-4.png" alt="" height="200" width="200">
+                        <p>Montage Vidéo</p>
+                        <div class="overlay-text">
+                            <p>Habitable à <span class="pourcent">100%</span></p>
                         </div>
                     </div>
-                    <div class="zoom-img text-center col-2">
-                        <div class="image-container">
-                            <img src="../images/planet-5.png" alt="" height="200" width="200">
-                            <p>Graphisme</p>
-                            <div class="overlay-text">
-                                <p>Habitable à 90%</p>
-                            </div>
+                </div>
+                <div class="zoom-img text-center col-lg-2 col-md-12">
+                    <div class="image-container">
+                        <img src="../images/planet-5.png" alt="" height="200" width="200">
+                        <p>Graphisme</p>
+                        <div class="overlay-text">
+                            <p>Habitable à <span class="pourcent">90%</span></p>
                         </div>
                     </div>
-                    <div class="zoom-img text-center col-2">
-                        <div class="image-container">
-                            <img src="../images/planet-6.png" alt="" height="200" width="200">
-                            <p>Anglais</p>
-                            <div class="overlay-text">
-                                <p>Habitable à 60%</p>
-                            </div>
+                </div>
+                <div class="zoom-img text-center col-lg-2 col-md-12">
+                    <div class="image-container">
+                        <img src="../images/planet-6.png" alt="" height="200" width="200">
+                        <p>Anglais</p>
+                        <div class="overlay-text">
+                            <p>Habitable à <span class="pourcent">60%</span></p>
                         </div>
                     </div>
                 </div>
@@ -205,7 +206,7 @@ h2 span {
 }
 
 .bloc-planet {
-    margin: 50px 0 200px 0;
+    margin: 50px 0 175px 0;
     padding: 50px;
 }
 
@@ -220,6 +221,13 @@ h2 span {
     transform: scale(1.2);
     filter: blur(3px);
 }
+
+.pourcent {
+    font-weight: bold;
+    color: blue;
+    text-shadow: 2px 2px 4px white;
+}
+
 .overlay-text {
     position: absolute;
     top: 50%;
@@ -236,5 +244,6 @@ h2 span {
 
 .image-container:hover .overlay-text {
     display: block;
-}</style>
+}
+</style>
   
