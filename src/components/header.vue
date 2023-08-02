@@ -1,11 +1,12 @@
 <template>
-  <nav class="navbar navbar-expand-lg header-overlay" >
+  <nav :class="{ 'mobile-menu-open': collapse }" class="navbar navbar-expand-lg header-overlay">
     <div class="container-fluid nav-font">
-        <router-link to="/index" class="navbar-brand">
-          <img src="../images/Logo_LRcm.png" alt="LRcm Logo" height="150" width="150">
-        </router-link>
+      <router-link to="/index" class="navbar-brand">
+        <img src="../images/Logo_LRcm.png" alt="LRcm Logo" height="150" width="150">
+      </router-link>
       <button @click="collapse = !collapse" class="navbar-toggler" type="button">
-        <span class="navbar-toggler-icon"></span>
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon top-bar"></span>
       </button>
       <div :class="{ collapse }" class="navbar-collapse">
         <div class="navbar-nav ms-auto text-uppercase ">
@@ -34,7 +35,6 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +47,8 @@ export default {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999; /* Assurez-vous que le z-index est supérieur aux autres éléments de votre site */
+  z-index: 9999;
+  /* Assurez-vous que le z-index est supérieur aux autres éléments de votre site */
   background-color: transparent;
 }
 .nav-link {
@@ -71,5 +72,13 @@ a:hover span {
   background: white;
   color: #2b1055;
   border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .navbar-nav {
+    background: rgb(43, 16, 85, 0.9);
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+  }
 }
 </style>
