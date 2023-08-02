@@ -8,7 +8,7 @@
             </h2>
             <button @click="scrollToSection" id="btn">Explorer</button>
             <img src="../images/mountain_front_left.png" id="mountain_front">
-            <img src="../images/moon_landing.png" id="moon_landing">
+            <img src="../images/missions.png" id="moon_landing">
         </section>
 
         <div class="container-fluid">
@@ -18,20 +18,30 @@
                 </div>
             </div>
                     <div class="row bloc-projets d-flex">
-                        <div class="text-center col-lg-4 col-12">
-                            <div class="image-container">
-                                <img src="../images/projet-1.png" class="image-background" alt="" height="350" width="350">
-                            </div>
+
+                        <div class="zoom-img text-center col-lg-4 col-12">
+                            <router-link to="./projetone.vue">
+                                <div class="image-container">
+                                    <img src="../images/projet-1.png" class="image-background" alt="" height="350" width="350">
+                                    <div class="overlay-text">En savoir plus...</div>
+                                </div>
+                            </router-link>
                         </div>
-                        <div class="text-center col-lg-4 col-12">
-                            <div class="image-container">
-                                <img src="../images/projet-2.png" class="image-background" alt="" height="350" width="350">
-                            </div>
+                        <div class="zoom-img text-center col-lg-4 col-12">
+                            <router-link to="./projettwo.vue">
+                                <div class="image-container">
+                                    <img src="../images/projet-2.png" class="image-background" alt="" height="350" width="350">
+                                    <div class="overlay-text">En savoir plus...</div>
+                                </div>
+                            </router-link>
                         </div>
-                        <div class="text-center col-lg-4 col-12">
-                            <div class="image-container">
-                                <img src="../images/projet-3.png" class="image-background" alt="" height="350" width="350">
-                            </div>
+                        <div class="zoom-img text-center col-lg-4 col-12">
+                            <router-link to="./projettree.vue">
+                                <div class="image-container">
+                                    <img src="../images/projet-3.png" class="image-background" alt="" height="350" width="350">
+                                    <div class="overlay-text">En savoir plus...</div>
+                                </div>
+                            </router-link>
                         </div>
                     </div>
                 </div>
@@ -143,5 +153,28 @@ h2 span {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 25px 0 25px;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Masquer le texte par défaut */
+}
+.image-container:hover .overlay-text {
+    display: block;
+}
+.zoom-img img{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.zoom-img img:hover{
+    transform: scale(1.1);
+    filter: blur(5px);
 }
 </style>

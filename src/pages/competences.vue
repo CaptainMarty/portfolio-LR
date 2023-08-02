@@ -8,7 +8,7 @@
             </h2>
             <button @click="scrollToSection" id="btn">Explorer</button>
             <img src="../images/mountain_front_left.png" id="mountain_front">
-            <img src="../images/moon_landing.png" id="moon_landing">
+            <img src="../images/aptitude.png" id="moon_landing">
         </section>
 
         <div class="container sec2">

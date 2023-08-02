@@ -12,7 +12,9 @@ import Explorateur from './pages/explorateur.vue'
 import Projets from './pages/projets.vue'
 import Contact from './pages/contact.vue'
 import Competences from './pages/competences.vue'
-
+import ProjetOne from './pages/projetone.vue'
+import ProjetTwo from './pages/projettwo.vue'
+import ProjetTree from './pages/projettree.vue'
 
 const routes = [
     { path: '/', redirect: '/index' },
@@ -20,7 +22,11 @@ const routes = [
     { path: '/explorateur', component: Explorateur },
     { path: '/projets', component: Projets },
     { path: '/contact', component: Contact },
-    { path: '/competences', component: Competences }
+    { path: '/competences', component: Competences },
+    { path: '/projetone', component: ProjetOne },
+    { path: '/projettwo', component: ProjetTwo },
+    { path: '/projettree', component: ProjetTree }
+
   ]
 
 
