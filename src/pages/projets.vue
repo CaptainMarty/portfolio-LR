@@ -13,28 +13,28 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 sec" id="section">
-                    <h2>Mes Différentes Projets</h2>
-                    <div class="bloc-projets d-flex">
-                        <div class="text-center col-4">
+                <div class="col-12 sec text-center" id="section">
+                    <h2>Mes Différents Projets</h2>
+                </div>
+            </div>
+                    <div class="row bloc-projets d-flex">
+                        <div class="text-center col-lg-4 col-12">
                             <div class="image-container">
                                 <img src="../images/projet-1.png" class="image-background" alt="" height="350" width="350">
                             </div>
                         </div>
-                        <div class="text-center col-4">
+                        <div class="text-center col-lg-4 col-12">
                             <div class="image-container">
                                 <img src="../images/projet-2.png" class="image-background" alt="" height="350" width="350">
                             </div>
                         </div>
-                        <div class="text-center col-4">
+                        <div class="text-center col-lg-4 col-12">
                             <div class="image-container">
                                 <img src="../images/projet-3.png" class="image-background" alt="" height="350" width="350">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </body>
 </template>
 
@@ -127,7 +127,7 @@ h2 span {
 
 .sec {
     position: relative;
-    padding: 100px;
+    padding: 75px;
     background: #1c0522;
 }
 
@@ -136,8 +136,12 @@ h2 span {
     margin-bottom: 10px;
     color: white;
 }
+.bloc-projets{
+    background: #1c0522;
+}
 .bloc-projets img {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.7);
+    margin: 25px 0 25px;
 }
 </style>

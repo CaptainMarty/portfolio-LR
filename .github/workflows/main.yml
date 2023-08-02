@@ -21,5 +21,5 @@ jobs:
     - name: Deploy over SSH
       run:
         sshpass -e ssh -o StrictHostKeyChecking=no -p 5022 ${{ secrets.USER }}@${{ secrets.HOST }}
-        "cd public_html && git pull"
+        "cd public_html && git pull && /opt/alt/alt-nodejs8/root/usr/bin/npm run build"
  
